@@ -32,9 +32,24 @@ def lettersCheck(phrase: str, letters: str = 'aeiou') -> set:
     return set(letters).intersection(set(phrase))  # Check for intersection
 
 
+@app.route('/cv')
+def cvPage() -> 'html':
+    return render_template('cv.html')
+
+
 @app.route('/viewlog')
-def log_page() -> str:
-    return escape(open('vsearch.log').read())
+def log_page() -> 'html':
+    contents = []
+    with open('vsearch.log') as log:
+        for line in log:
+            contents.append([])
+            for item in line.split('|'):
+                contents[-1].append(escape(item))
+    titles = ('Form Data', 'Remote Address', 'User Agent', 'Results')
+    return render_template('viewlog.html',
+                           the_data=contents,
+                           the_row_titles=titles,
+                           the_title='View Logs')
 
 
 if __name__ == '__main__':

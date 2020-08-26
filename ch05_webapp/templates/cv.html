@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resumé - Hannes Frey</title>
+    <link rel="stylesheet" type="text/css" href="../static/resume/cv.css">
+    <link rel="stylesheet" type="text/css" href="../static/resume/consent.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $('resume').css({'display':'none'})
+        setTimeout(function(){ $('.resume').css({'display':'block'}) }, 3000);
+    </script>
+
+</head>
+<body>
+<div class="parallelogram" id="one"></div>
+<div class="parallelogram" id="two"></div>
+<div class="parallelogram" id="three"></div>
+<div class="parallelogram" id="four"></div>
+<div class="parallelogram" id="five"></div>
+<div class="parallelogram" id="six"></div>
+
+
+<div class="container">
+
+    <div class="row">
+        <img class="menot" src="../static/resume/image.png" alt="Picture of Hannes Frey">
+    </div>
+    <hr class="fade-slide">
+    <div class="info">
+        <div class="row">
+
+            <div class="col-md-9 heading">
+                <svg id="logo" width="460" height="68" viewBox="0 0 460 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M46.552 1.60001V52H37.192V30.4H11.128V52H1.76801V1.60001H11.128V22.408H37.192V1.60001H46.552Z" stroke="#EEEEEE" stroke-width="1" mask="url(#path-1-outside-1)"/>
+                    <path d="M73.8811 13.12C79.5451 13.12 83.8651 14.488 86.8411 17.224C89.8651 19.912 91.3771 23.992 91.3771 29.464V52H82.8811V47.32C81.7771 49 80.1931 50.296 78.1291 51.208C76.1131 52.072 73.6651 52.504 70.7851 52.504C67.9051 52.504 65.3851 52.024 63.2251 51.064C61.0651 50.056 59.3851 48.688 58.1851 46.96C57.0331 45.184 56.4571 43.192 56.4571 40.984C56.4571 37.528 57.7291 34.768 60.2731 32.704C62.8651 30.592 66.9211 29.536 72.4411 29.536H82.3771V28.96C82.3771 26.272 81.5611 24.208 79.9291 22.768C78.3451 21.328 75.9691 20.608 72.8011 20.608C70.6411 20.608 68.5051 20.944 66.3931 21.616C64.3291 22.288 62.5771 23.224 61.1371 24.424L57.6091 17.872C59.6251 16.336 62.0491 15.16 64.8811 14.344C67.7131 13.528 70.7131 13.12 73.8811 13.12ZM72.6571 45.952C74.9131 45.952 76.9051 45.448 78.6331 44.44C80.4091 43.384 81.6571 41.896 82.3771 39.976V35.512H73.0891C67.9051 35.512 65.3131 37.216 65.3131 40.624C65.3131 42.256 65.9611 43.552 67.2571 44.512C68.5531 45.472 70.3531 45.952 72.6571 45.952Z" stroke="#EEEEEE" stroke-width="1" mask="url(#path-1-outside-1)"/>
+                    <path d="M124.743 13.12C129.591 13.12 133.479 14.536 136.407 17.368C139.335 20.2 140.799 24.4 140.799 29.968V52H131.799V31.12C131.799 27.76 131.007 25.24 129.423 23.56C127.839 21.832 125.583 20.968 122.655 20.968C119.343 20.968 116.727 21.976 114.807 23.992C112.887 25.96 111.927 28.816 111.927 32.56V52H102.927V13.552H111.495V18.52C112.983 16.744 114.855 15.4 117.111 14.488C119.367 13.576 121.911 13.12 124.743 13.12Z" stroke="#EEEEEE" stroke-width="1" mask="url(#path-1-outside-1)"/>
+                    <path d="M174.033 13.12C178.881 13.12 182.769 14.536 185.697 17.368C188.625 20.2 190.089 24.4 190.089 29.968V52H181.089V31.12C181.089 27.76 180.296 25.24 178.712 23.56C177.128 21.832 174.873 20.968 171.945 20.968C168.633 20.968 166.016 21.976 164.096 23.992C162.176 25.96 161.217 28.816 161.217 32.56V52H152.217V13.552H160.785V18.52C162.273 16.744 164.144 15.4 166.4 14.488C168.656 13.576 171.201 13.12 174.033 13.12Z" stroke="#EEEEEE" stroke-width="1" mask="url(#path-1-outside-1)"/>
+                    <path d="M238.001 32.992C238.001 33.616 237.953 34.504 237.857 35.656H207.689C208.217 38.488 209.585 40.744 211.793 42.424C214.049 44.056 216.833 44.872 220.145 44.872C224.369 44.872 227.849 43.48 230.585 40.696L235.409 46.24C233.681 48.304 231.497 49.864 228.857 50.92C226.217 51.976 223.241 52.504 219.929 52.504C215.705 52.504 211.985 51.664 208.769 49.984C205.553 48.304 203.057 45.976 201.281 43C199.553 39.976 198.689 36.568 198.689 32.776C198.689 29.032 199.529 25.672 201.209 22.696C202.937 19.672 205.313 17.32 208.337 15.64C211.361 13.96 214.769 13.12 218.561 13.12C222.305 13.12 225.641 13.96 228.569 15.64C231.545 17.272 233.849 19.6 235.481 22.624C237.161 25.6 238.001 29.056 238.001 32.992ZM218.561 20.32C215.681 20.32 213.233 21.184 211.217 22.912C209.249 24.592 208.049 26.848 207.617 29.68H229.433C229.049 26.896 227.873 24.64 225.905 22.912C223.937 21.184 221.489 20.32 218.561 20.32Z" stroke="#EEEEEE" stroke-width="1" mask="url(#path-1-outside-1)"/>
+                    <path d="M258.526 52.504C255.406 52.504 252.358 52.096 249.382 51.28C246.406 50.464 244.03 49.432 242.254 48.184L245.71 41.344C247.438 42.496 249.502 43.432 251.902 44.152C254.35 44.824 256.75 45.16 259.102 45.16C264.478 45.16 267.166 43.744 267.166 40.912C267.166 39.568 266.47 38.632 265.078 38.104C263.734 37.576 261.55 37.072 258.526 36.592C255.358 36.112 252.766 35.56 250.75 34.936C248.782 34.312 247.054 33.232 245.566 31.696C244.126 30.112 243.406 27.928 243.406 25.144C243.406 21.496 244.918 18.592 247.942 16.432C251.014 14.224 255.142 13.12 260.326 13.12C262.966 13.12 265.606 13.432 268.246 14.056C270.886 14.632 273.046 15.424 274.726 16.432L271.27 23.272C268.006 21.352 264.334 20.392 260.254 20.392C257.614 20.392 255.598 20.8 254.206 21.616C252.862 22.384 252.19 23.416 252.19 24.712C252.19 26.152 252.91 27.184 254.35 27.808C255.838 28.384 258.118 28.936 261.19 29.464C264.262 29.944 266.782 30.496 268.75 31.12C270.718 31.744 272.398 32.8 273.79 34.288C275.23 35.776 275.95 37.888 275.95 40.624C275.95 44.224 274.39 47.104 271.27 49.264C268.15 51.424 263.902 52.504 258.526 52.504Z" stroke="#EEEEEE" stroke-width="1" mask="url(#path-1-outside-1)"/>
+                    <path d="M313.823 9.44801V24.784H338.159V32.704H313.823V52H304.463V1.60001H341.255V9.44801H313.823Z" stroke="#EEEEEE" stroke-width="1" mask="url(#path-1-outside-1)"/>
+                    <path d="M357.308 19.168C359.9 15.136 364.46 13.12 370.988 13.12V21.688C370.22 21.544 369.524 21.472 368.9 21.472C365.396 21.472 362.66 22.504 360.692 24.568C358.724 26.584 357.74 29.512 357.74 33.352V52H348.74V13.552H357.308V19.168Z" stroke="#EEEEEE" stroke-width="1" mask="url(#path-1-outside-1)"/>
+                    <path d="M414.415 32.992C414.415 33.616 414.367 34.504 414.271 35.656H384.103C384.631 38.488 385.999 40.744 388.207 42.424C390.463 44.056 393.247 44.872 396.559 44.872C400.783 44.872 404.263 43.48 406.999 40.696L411.823 46.24C410.095 48.304 407.911 49.864 405.271 50.92C402.631 51.976 399.655 52.504 396.343 52.504C392.119 52.504 388.399 51.664 385.183 49.984C381.967 48.304 379.471 45.976 377.695 43C375.967 39.976 375.103 36.568 375.103 32.776C375.103 29.032 375.943 25.672 377.623 22.696C379.351 19.672 381.727 17.32 384.751 15.64C387.775 13.96 391.183 13.12 394.975 13.12C398.719 13.12 402.055 13.96 404.983 15.64C407.959 17.272 410.263 19.6 411.895 22.624C413.575 25.6 414.415 29.056 414.415 32.992ZM394.975 20.32C392.095 20.32 389.647 21.184 387.631 22.912C385.663 24.592 384.463 26.848 384.031 29.68H405.847C405.463 26.896 404.287 24.64 402.319 22.912C400.351 21.184 397.903 20.32 394.975 20.32Z" stroke="#EEEEEE" stroke-width="1" mask="url(#path-1-outside-1)"/>
+                    <path d="M458.357 13.552L440.357 55.096C438.677 59.272 436.637 62.2 434.237 63.88C431.837 65.608 428.933 66.472 425.525 66.472C423.605 66.472 421.709 66.16 419.837 65.536C417.965 64.912 416.429 64.048 415.229 62.944L418.829 56.32C419.693 57.136 420.701 57.784 421.853 58.264C423.053 58.744 424.253 58.984 425.453 58.984C427.037 58.984 428.333 58.576 429.341 57.76C430.397 56.944 431.357 55.576 432.221 53.656L432.869 52.144L416.093 13.552H425.453L437.549 41.992L449.717 13.552H458.357Z" stroke="#EEEEEE" stroke-width="1" mask="url(#path-1-outside-1)"/>
+                </svg>
+
+
+                <h3 class="fade-1">Student - Hochschule der Medien, Stuttgart - Media Informatics</h3>
+                <p class="fade-1"><br>Hello and welcome to my resume page. I am glad you made it here, I
+                    hope you can find all the information you need and enjoy the page
+                    as much as I when creating it.<br>
+                </p>
+            </div>
+            <div class="col-md-3 heading">
+                <img class="me fade-2" src="../static/resume/image.png" alt="Picture of Hannes Frey">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="resume fade-3">
+        <div class="row">
+            <div class="col-md-6" id="attribute">
+                <h1>Skills</h1>
+                <p>
+                    <b>Web-Front-End:</b> HTML, CSS, JS<br>
+                    <b>Software-Dev.:</b> Java, Python, C#, SQL<br>
+                    <b>Other Tools:</b> Git, Linux<br>
+                    <b>Workspace:</b> IntelliJ, PhpStorm<br>
+                    <b>Other Skills:</b> Computer networks, data structures <br>
+                </p>
+            </div>
+            <div class="col-md-6 fade-4 attribute">
+                <h1>Portfolio</h1>
+                <p>
+                    <b><a href="https://hfrey.de/index.html" target="_blank">My homepage: </a></b><br>Submission first
+                    term for
+                    'Web Development 1'<br>
+                    <b><a href="https://github.com/Hannes5612/OrgaTool"
+                          target="_blank">Organizing-Tool: </a></b><br>Submission
+                    second term for 'Software Development 2'<br>
+                    <b><a href="https://github.com/Hannes5612/CurrencyConverter " target="_blank">Currency
+                        Converter: </a></b><br>Java code to exchange currencies
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 attribute fade-5">
+                <h1>Employment</h1>
+                <p>
+                    <b>2016: Stahlbau Wendeler</b><br>
+                    Temporary work for an employee in vacation
+                </p>
+            </div>
+            <div class="col-md-6 attribute fade-6">
+                <h1>Education</h1>
+                <p>
+                    <b>2009 - 2017: WHG Göppingen</b><br>
+                    <a href="../static/resume/abi.pdf" target="_blank"> A-Level </a><br>
+                    <b>2017 - 2019: Univerity of Stuttgart</b><br>
+                    Four terms Physics and Chemistry of Education<br>
+                    <a href="../static/resume/stg.pdf" target="_blank"> Study report </a><br>
+                    <b>Since 2019: HdM Stuttgart</b><br>
+                    Media-Informatics
+                    <a href="../static/resume/hdm.pdf" target="_blank"> Study report </a><br>
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 attribute-small fade-7">
+                <h1>Contact</h1>
+                <p>
+                    <b>Mail: </b> <a href="mailto:xcoxxnxtaxxcxxxt@hfxrexy.xdxe"
+                                     onmouseover="this.href=this.href.replace(/x/g,'');">Send Mail</a><br>
+                    <b>Phone: </b> 0176 / 4176 4476 <br>
+                </p>
+            </div>
+            <div class="col-md-6 attribute-small fade-8">
+                <h1>Social</h1>
+                <p>
+                    <b><a href="https://twitter.com/HannesFrey2" target="_blank">Twitter</a></b><br>
+                    <b><a href="https://www.facebook.com/freyhannes" target="_blank">Facebook</a></b><br>
+                    <b><a href="https://www.instagram.com/xkzyan" target="_blank">Instagram</a></b><br>
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<script src="../static/resume/consent.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175320944-1"></script>
+<script>
+    function loadGAonConsent() {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-175320944-1');
+    }
+
+    if (document.cookie.split(';').filter(function (item) {
+        return item.indexOf('cookieconsent_status=allow') >= 0
+    }).length) {
+        loadGAonConsent();
+    }
+
+    window.addEventListener("load", function(){
+        window.cookieconsent.initialise({
+            "palette": {
+                "popup": {
+                    "background": "#3c404d",
+                    "text": "#d6d6d6"
+                },
+                "button": {
+                    "background": "transparent",
+                    "text": "#8bed4f",
+                    "border": "#8bed4f"
+                }
+            },
+            "position": "bottom",
+            "type": "opt-out",
+            "content": {
+                "href": "www.hfrey.de/privacy"
+            }
+            ,
+            onStatusChange: function(status, chosenBefore) {
+                var type = this.options.type;
+                var didConsent = this.hasConsented();
+                if (type == 'opt-in' && didConsent) {
+                    // enable cookies
+                    loadGAonConsent();
+                }
+            }
+        })
+    });
+
+</script>
+</body>
+</html>
+
+
+
