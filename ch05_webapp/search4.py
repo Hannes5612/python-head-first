@@ -7,7 +7,7 @@ app = Flask(__name__)
 def do_search() -> 'html':
     phrase = request.form["phrase"]
     letters = request.form["letters"]
-    result = str(lettersCheck(phrase,letters))
+    result = str(lettersCheck(phrase, letters))
     return render_template('results.html',
                            the_title="Ergebnisse ihrer Suche!",
                            the_phrase=phrase,
@@ -23,6 +23,11 @@ def entry_page() -> 'html':
 
 def lettersCheck(phrase: str, letters: str = 'aeiou') -> set:
     return set(letters).intersection(set(phrase))  # Check for intersection
+
+
+def log_request(req: 'flask_request', res: str) -> None:
+    with open('vsearch.log', 'a') as log:
+        print(req, res, file=log)
 
 
 if __name__ == '__main__':
