@@ -1,11 +1,28 @@
 from flask import Flask, render_template, request, escape
+import mysql.connector
 
 app = Flask(__name__)
 
 
 def log_request(req: 'flask_request', res: str) -> None:
-    with open('vsearch.log', 'a') as log:
-        print(req.form, req.remote_addr, req.user_agent, res, file=log, sep='|')
+    """Log details of the request in a database"""
+
+    _DBCONFIG = {'user': 'vsearch',
+                 'password': 'vsearchpasswd',
+                 'host': 'hfrey.de',
+                 'database': 'vsearchlogDB'}
+
+    conn = mysql.connector.connect(**_DBCONFIG)
+    cursor = conn.cursor()
+
+    _SQL = """insert into log (phrase, letters, ip, browser_string, results)
+              values
+              (%s, %s, %s, %s, %s)"""
+    cursor.execute(_SQL, (req.form['phrase'], req.form['letters'], req.remote_addr, req.user_agent.browser, res, ))
+
+    cursor.close()
+    conn.commit()
+    conn.close()
 
 
 @app.route('/search4', methods=['POST'])
